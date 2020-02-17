@@ -1,0 +1,9 @@
+.GestioneUtenti {
+    
+    .nav-item.active {
+        border-bottom: solid 2px var(--gray-900);
+    }
+    .nav-link {
+        cursor: pointer;
+    }
+}

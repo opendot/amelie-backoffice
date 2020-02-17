@@ -1,0 +1,41 @@
+@import '../../theme/variables';
+
+.Comunicator{
+  .selectDays{
+    margin-left:5px;
+    background-color: #FFF;
+    color: $dashboard-dark-grey;
+    border-bottom: 1px solid $dashboard-dark-grey;
+    border-left:none;
+    border-top:none;
+    border-right:none;
+  }
+
+  .block-plots{
+    border-radius: 6px;
+    border: 1px solid $dashboard-light-grey;
+  }
+
+  .title-block{
+    font-size: 12px;
+    color:$dashboard-dark-grey;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+
+  .big-value{
+    font-size: 32px;
+    color:$dashboard-dark-grey;
+  }
+
+  .percentage-increment{
+    font-size: 12px;
+    color:$dashboard-dark-grey;
+    .green-percentage{
+      color:$dashboard-green;
+    }
+    .red-percentage{
+      color:red;
+    }
+  }
+}

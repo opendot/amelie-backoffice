@@ -1,0 +1,19 @@
+.CareReceiverDetail .block-care {
+  min-height: 160px; }
+
+.CareReceiverDetail .title-block {
+  font-size: 12px;
+  color: #212B36;
+  text-transform: uppercase; }
+
+.CareReceiverDetail .big-value {
+  color: #212B36;
+  font-size: 72px;
+  font-weight: 100; }
+  .CareReceiverDetail .big-value small {
+    margin-left: 5px;
+    font-size: 14px; }
+
+.CareReceiverDetail .description-block {
+  color: #212B36;
+  font-size: 20px; }

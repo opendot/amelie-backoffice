@@ -1,0 +1,18 @@
+@import '../../../theme/variables';
+
+.ChartAdvancement{
+  .bar-lab{
+    height: 10px;
+    position: relative;
+    background-color: #D8D8D8;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+
+    .plot-green{
+      background-color: $dashboard-green;
+      position: absolute;
+      height: 100%;
+      border-radius: 5px 5px 5px 5px;
+    }
+  }
+}

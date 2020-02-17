@@ -1,0 +1,7 @@
+.Sidebar {
+  height: 100vh;
+  position: sticky;
+  top: 0px; }
+  .Sidebar .menu {
+    overflow-y: auto;
+    min-height: 0; }

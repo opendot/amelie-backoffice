@@ -1,0 +1,17 @@
+@import '../../../theme/variables';
+
+.TreeLengthPlot{
+  min-height: 18px;
+
+  .level{
+    width: 22px;
+    height: 8px;
+    margin-right: 2px;
+  }
+
+  .complete{
+    background-color: $dashboard-green;
+  }
+
+
+}

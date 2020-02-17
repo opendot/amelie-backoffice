@@ -1,0 +1,25 @@
+@import '../../../theme/variables';
+
+.CompletedExercisesPlot{
+  min-height: 18px;
+
+  .exercise{
+    width: 3px;
+    height: 6px;
+    margin-right: 2px;
+    border-radius: 3px;
+    margin-bottom: 3px;
+  }
+
+  .to-complete{
+    background-color: $dashboard-dark-grey2;
+  }
+
+  .complete{
+    background-color: $dashboard-green;
+  }
+
+  .on-going{
+    background-color: #DDD13B;
+  }
+}

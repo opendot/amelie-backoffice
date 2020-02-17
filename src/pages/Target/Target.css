@@ -1,0 +1,10 @@
+.Target .name-label {
+  font-size: 0.75rem;
+  margin-top: 15px;
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+  font-weight: bold; }
+
+.Target .sticky-top-target {
+  position: sticky;
+  top: 56px; }

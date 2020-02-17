@@ -1,0 +1,39 @@
+@import '../../theme/variables';
+
+.ExerciseDetail{
+  margin-top:56px;
+
+  .title-bar{
+    height: 35px;
+    margin-right: 5px;
+    width: 7px;
+    margin-top: 6px;
+    border-radius: 8px;
+  }
+
+  .switch.switch-sm input + label {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  .completed{
+    background-color: $dashboard-green;
+  }
+
+  .in-progress{
+    background-color: $dashboard-yellow;
+  }
+
+  .title-name{
+    font-size: 42px;
+    line-height: 46px;
+    font-weight: 300;
+    color:$dashboard-dark-grey;
+  }
+
+  .text-filters-view{
+    font-size: 14px;
+    color:$dashboard-dark-grey;
+  }
+
+}

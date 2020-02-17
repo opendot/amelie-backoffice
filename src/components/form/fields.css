@@ -1,0 +1,26 @@
+.dropzone {
+  border: 4px dashed var(--gray-200);
+  padding: 10px;
+  transition: border 0.25s ease-in-out;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: pointer; }
+
+.dropzone.dropzone-active {
+  border: 4px dashed var(--success); }
+
+.dropzone.dropzone-disabled {
+  border: 4px dashed var(--light); }
+
+.dropzone.dropzone-reject {
+  border: 4px dashed var(--danger); }
+
+.dropzone img {
+  max-width: 100%;
+  max-height: 35vw; }
+
+.picker-height {
+  max-height: calc(100vh - (1.75rem * 2));
+  overflow: scroll; }

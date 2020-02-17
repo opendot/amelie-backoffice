@@ -1,0 +1,5 @@
+.StepForm .card-preview.selected {
+  border: 4px solid var(--success); }
+
+.StepForm .card-preview .form-group {
+  margin-bottom: 0px; }

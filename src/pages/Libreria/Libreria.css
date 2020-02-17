@@ -1,0 +1,27 @@
+.Libreria .nav {
+  border: 1px solid #c4cdd5; }
+
+.Libreria .nav-item {
+  cursor: pointer;
+  padding: 1rem;
+  color: var(--gray);
+  transition: color 0.25s linear; }
+
+.Libreria .nav-item:hover {
+  color: var(--body); }
+
+.Libreria .nav-item.active {
+  border-bottom: 4px solid var(--dark);
+  color: var(--body); }
+
+.Libreria .main-title {
+  background-color: white;
+  border-bottom: 1px solid #c4cdd5;
+  padding: 1.45rem 1rem;
+  font-style: normal;
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.Libreria .sticky-top {
+  position: sticky;
+  top: 56px; }

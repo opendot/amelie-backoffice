@@ -1,0 +1,69 @@
+@import '../../../theme/variables';
+
+.SessionPlayer {
+  .position-bar {
+    background: black;
+    // opacity: 0.6;
+    z-index: 99;
+  }
+
+  .play-pause {
+    user-select: none;
+  }
+
+  .step-top-label {
+    font-size: 13px;
+  }
+
+  .point-event {
+    border-radius: 10px;
+  }
+  .sound-event {}
+
+  .choice-event {
+    border-radius: 10px;
+    color: white;
+    &.choice-good {
+      background: $dashboard-green;
+    }
+    &.choice-bad {
+      background: $dashboard-red;
+    }
+
+    &.choice-neutral {
+        background: #fff;
+      }
+  }
+
+  .time-tick {
+    color: rgba($dashboard-dark-grey, .5);
+    font-size: 12px;
+  }
+
+  .feedback-event {
+    user-select: none;
+    border-radius: 10px;
+  }
+
+  .left-labels-cont {
+    font-size: 15px;
+  }
+  .border-y-dashed {
+    border-top-style: dashed !important;
+    // border-width: 0.1rem !important;
+    border-bottom-style: dashed !important;
+  }
+  .border-bottom-dashed {
+    // border-bottom-width: 0.1rem !important;
+    border-bottom-style: dashed !important;
+  }
+  .border-top-dashed {
+    // border-top-width: 0.1rem !important;
+    border-top-style: dashed !important;
+  }
+  .audio-player-session {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+  }
+}

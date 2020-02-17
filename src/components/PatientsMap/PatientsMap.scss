@@ -1,0 +1,18 @@
+.patients-map {
+
+    .legend {
+        .bar {
+            height: 20px;
+            width: 200px;
+            background: linear-gradient(to right,#fff ,#2DC268);
+        }
+        .bar-text {
+            width: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+    }
+
+}

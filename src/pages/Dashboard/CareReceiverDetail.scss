@@ -1,0 +1,41 @@
+@import '../../theme/variables';
+
+.CareReceiverDetail{
+  .block-care{
+    min-height: 160px;
+  }
+  .title-block{
+    font-size: 12px;
+    color:$dashboard-dark-grey;
+    text-transform: uppercase;
+  }
+  .big-value{
+    color: $dashboard-dark-grey;
+    font-size: 72px;
+    font-weight: 100;
+    small {
+      margin-left: 5px;
+      font-size: 14px;
+    }
+  }
+  .description-block{
+    color: $dashboard-dark-grey;
+    font-size:20px;
+  }
+  .text-chart{
+    color:$dashboard-dark-grey;
+    font-size: 12px;
+  }
+
+  .date-filters{
+    font-size: 14px;
+    color: $dashboard-dark-grey;
+    margin-top:5px;
+  }
+
+  .no-clickable-month{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+}

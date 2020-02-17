@@ -1,0 +1,9 @@
+.Navbar {
+  padding: 0.5rem 1rem 0rem !important;
+  min-height: 56px; }
+  .Navbar .nav-item.active {
+    border-bottom: 0.25rem solid #ed6347; }
+  .Navbar .nav-item {
+    border-bottom: 0.25rem solid transparent; }
+  .Navbar .nav-item .nav-link {
+    padding: 0.5rem 1rem 0.75rem; }

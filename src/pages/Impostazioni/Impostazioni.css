@@ -1,0 +1,5 @@
+.Impostazioni .nav-item.active {
+  border-bottom: solid 2px var(--gray-900); }
+
+.Impostazioni .nav-link {
+  cursor: pointer; }

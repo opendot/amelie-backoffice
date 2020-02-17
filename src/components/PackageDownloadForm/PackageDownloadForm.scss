@@ -1,0 +1,83 @@
+.package-download{
+
+  input[type="number"]{
+    display:block;
+    float:left;
+    max-width: 100px;
+  }
+
+  select{
+    display:block;
+    float:left;
+    max-width: 300px;
+    border:none;
+    border-bottom:2px solid black;
+  }
+
+  select:focus{
+    outline:none;
+    border:none;
+    border-bottom:1px solid black;
+    box-shadow:none;
+  }
+
+  label{
+    display:block;
+    float:left;
+    width:300px;
+    height: calc(1.5em + 0.75rem + 2px);
+    line-height:calc(1.5em + 0.75rem + 2px);
+  }
+
+  .form-group, .form-check{
+    display:block;
+    clear:both;
+    margin:20px;
+    overflow: hidden;
+    padding:0;
+  }
+
+  .form-check input{
+    margin-left:300px;
+    height: calc(1.5em + 0.75rem + 2px);
+    width:20px;
+    margin-top: 0;
+  }
+
+  .ses-type:first-of-type {
+    margin-bottom:0;
+  }
+
+  .btn{
+    background-color:#212b36;
+    border-color:#212b36;
+    opacity:0.65;
+    transition:0.6s all linear;
+    margin-left:20px;
+    margin-top:50px;
+    padding:4px 40px !important;
+  }
+  .btn:hover{
+    background-color:#212b36;
+    border-color:#212b36;
+    opacity:1;
+  }
+
+  .include-eye{
+    display:flex;
+    align-items:center;
+  }
+  .eye-label{
+    margin-left:20px;
+    width:300px;
+  }
+  .session-type .form-check{
+    margin:0;
+    margin-left:20px;
+  }
+
+  .session-type{
+    margin:20px 0;
+  }
+
+}

@@ -1,0 +1,13 @@
+.Breadcrumb {
+  margin-top: 56px; }
+  .Breadcrumb .breadcrumb {
+    background-color: white;
+    border-bottom: 1px solid #c4cdd5;
+    border-radius: 0;
+    padding: 1.45rem 1rem; }
+  .Breadcrumb .breadcrumb-item {
+    font-size: 1.25rem; }
+    .Breadcrumb .breadcrumb-item a {
+      color: var(--gray-900);
+      border-bottom: 2px solid var(--gray-900);
+      text-decoration: none; }

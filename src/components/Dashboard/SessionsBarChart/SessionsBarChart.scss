@@ -1,0 +1,32 @@
+@import '../../../theme/variables';
+
+.SessionsBarChart {
+  border-radius: 6px;
+  border: 1px solid $dashboard-light-grey;
+
+  g.recharts-cartesian-grid-horizontal {
+    line:first-child {
+      display: none;
+    }
+  }
+
+  .custom-tooltip{
+    background-color: #FFF;
+    width: 200px;
+    padding: 10px;
+    .date{
+      color: $dashboard-dark-grey;
+      font-size: 12px;
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+    .sessions-desc{
+      color: $dashboard-dark-grey;
+      font-size: 12px;
+    }
+    .badges-tooltip{
+      color: $dashboard-green;
+      font-size: 12px;
+    }
+  }
+}

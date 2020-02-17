@@ -1,0 +1,40 @@
+@import '../../../theme/variables';
+
+.BadgesCarousel{
+  padding:33px;
+  min-height: 426px;
+  text-align: center;
+
+  .carousel-item{
+    img{
+      width:230px;
+    }
+  }
+
+  .date-badge{
+    font-size: 14px;
+    color:$dashboard-dark-grey;
+  }
+
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-clip:inherit;
+    top:40px;
+    position: relative;
+    border: 1px solid #979797;
+  }
+
+  .carousel-indicators .active {
+    background-color: #637381;
+    opacity: 1;
+  }
+
+  .text-badge{
+    font-size: 20px;
+    font-weight: 300;
+    color:$dashboard-dark-grey;
+  }
+
+}

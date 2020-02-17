@@ -1,0 +1,78 @@
+{
+	"id":"exercise_new_1",
+	"name":"Test tree",
+	"position": 4,
+	"consecutive_conclusions_required": 4,
+  "pages":[
+		{
+		    "id": "testpage1",
+		    "name": "Simple Custom Page",
+		    "level":0,
+		    "cards": [
+		        {
+		            "id": "b30abc9b-8fcd-4b99-8e85-ee5ca4331327",
+		            "x_pos": "0.1",
+		            "y_pos": "0.1",
+		            "scale": "1",
+		            "correct": "true",
+		            "next_page_id":"testpage2"
+		        },
+		        {
+		            "id": "e610fae6-cbf0-4af9-8bc4-5d6ec6ba085d",
+		            "x_pos": 0.2,
+		            "y_pos": 0.2,
+		            "scale": 2,
+		            "correct": false,
+		            "next_page_id":"testpage2"
+		        }
+		    ],
+		    "page_tags": [
+		            "Page tag 1",
+		            "Page tag 2",
+		            "Page tag 3"
+		    ]
+		},
+		{
+		    "id": "testpage2",
+		    "name": "Simple Custom Page2",
+		    "level":1,
+		    "cards": [
+		        {
+		            "id": "b30abc9b-8fcd-4b99-8e85-ee5ca4331327",
+		            "x_pos": 0.1,
+		            "y_pos": 0.1,
+		            "scale": 1,
+		            "correct": true,
+		            "next_page_id":""
+		        },
+		        {
+		            "id": "e610fae6-cbf0-4af9-8bc4-5d6ec6ba085d",
+		            "x_pos": 0.2,
+		            "y_pos": 0.2,
+		            "scale": 2,
+		            "correct": false,
+		            "next_page_id":""
+		        }
+		    ],
+		    "page_tags": [
+		            "Page tag 1",
+		            "Page tag 2",
+		            "Page tag 3"
+		    ]
+		}
+	],
+	"presentation_page": {
+		    "id": "xxx11222",
+		    "name": "Simple Custom Page preentation",
+		    "cards": [
+		        {
+		            "id": "b30abc9b-8fcd-4b99-8e85-ee5ca4331327",
+		            "x_pos": "0.1",
+		            "y_pos": "0.1",
+		            "scale": "1"
+		        }
+		    ],
+		    "page_tags": []
+		},
+	"strong_feedback_page_id": "6420c536-c8b2-4a1f-ad23-6c1507f8de41"
+}

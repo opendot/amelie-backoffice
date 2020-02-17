@@ -1,0 +1,289 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+:root {
+  --#{'gray-900'}: #{$gray-900};
+  --#{'gray-200'}: #{$gray-200};
+}
+
+body {
+  // padding-top: 56px;
+}
+
+body, html, #root {
+    height: 100%;
+}
+
+.pointer{
+  cursor:pointer;
+}
+
+.button-circle-lg {
+  width: $button-circle-lg;
+  height: $button-circle-lg;
+}
+
+.btn-w-material-icons i.material-icons {
+  vertical-align: middle !important;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0px;
+  z-index: 2;
+}
+
+.sticky-image-list {
+  position: sticky;
+  top: calc(78px + 56px);
+  z-index: 1;
+}
+
+.bg-white-90 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.page-item.active .page-link {
+  background-color: $info;
+  border-color: $info;
+}
+
+.page-link {
+  color: $info;
+}
+
+.card-custom:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.card-custom {
+  position: relative;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--light);
+}
+
+.card-custom-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.card-custom-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-custom .card-img-overlay-custom {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 1.25rem;
+  transform: translateY(100%);
+  transition: transform 0.25s ease-in-out;
+}
+
+.card-custom:hover .card-img-overlay-custom {
+  transform: translateY(0%);
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.rotating .material-icons {
+  animation: rotating 2s linear infinite;
+}
+
+/* switch toggle start from https://codepen.io/claviska/pen/KyWmjY */
+
+$switch-height: calc(#{$input-height} * 0.8) !default;
+$switch-height-sm: calc(#{$input-height-sm} * 0.8) !default;
+$switch-height-lg: calc(#{$input-height-lg} * 0.8) !default;
+$switch-border-radius: $switch-height !default;
+$switch-bg: map-get($theme-colors, "danger") !default;
+$switch-checked-bg: map-get($theme-colors, "success") !default;
+$switch-disabled-bg: $custom-control-indicator-disabled-bg !default;
+$switch-disabled-color: var(--gray-light) !default;
+$switch-thumb-bg: $white !default;
+$switch-thumb-border-radius: 50% !default;
+$switch-thumb-padding: 2px !default;
+$switch-focus-box-shadow: 0 0 0 $input-btn-focus-width
+  rgba(map-get($theme-colors, "primary"), 0.25);
+$switch-transition: 0.2s all !default;
+
+.switch {
+  font-size: $font-size-base;
+  position: relative;
+
+  input {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    background: none;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    padding: 0;
+
+    + label {
+      position: relative;
+      min-width: calc(#{$switch-height} * 2);
+      border-radius: $switch-border-radius;
+      height: $switch-height;
+      line-height: $switch-height;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+      vertical-align: middle;
+      text-indent: calc(calc(#{$switch-height} * 2) + 0.5rem);
+    }
+
+    + label::before,
+    + label::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(#{$switch-height} * 2);
+      bottom: 0;
+      display: block;
+    }
+
+    + label::before {
+      right: 0;
+      background-color: $switch-bg;
+      border-radius: $switch-border-radius;
+      transition: $switch-transition;
+    }
+
+    + label::after {
+      top: $switch-thumb-padding;
+      left: $switch-thumb-padding;
+      width: calc(#{$switch-height} - calc(#{$switch-thumb-padding} * 2));
+      height: calc(#{$switch-height} - calc(#{$switch-thumb-padding} * 2));
+      border-radius: $switch-thumb-border-radius;
+      background-color: $switch-thumb-bg;
+      transition: $switch-transition;
+    }
+
+    &:checked + label::before {
+      background-color: $switch-checked-bg;
+    }
+
+    &:checked + label::after {
+      margin-left: $switch-height;
+    }
+
+    &:focus + label::before {
+      outline: none;
+    }
+
+    &:disabled + label {
+      color: $switch-disabled-color;
+      cursor: not-allowed;
+    }
+
+    &:disabled + label::before {
+      background-color: $switch-disabled-bg;
+    }
+  }
+
+  // Small variation
+  &.switch-sm {
+    font-size: $font-size-sm;
+
+    input {
+      + label {
+        min-width: calc(#{$switch-height-sm} * 2);
+        height: $switch-height-sm;
+        line-height: $switch-height-sm;
+        text-indent: calc(calc(#{$switch-height-sm} * 2) + 0.5rem);
+      }
+
+      + label::before {
+        width: calc(#{$switch-height-sm} * 2);
+      }
+
+      + label::after {
+        width: calc(#{$switch-height-sm} - calc(#{$switch-thumb-padding} * 2));
+        height: calc(#{$switch-height-sm} - calc(#{$switch-thumb-padding} * 2));
+      }
+
+      &:checked + label::after {
+        margin-left: $switch-height-sm;
+      }
+    }
+  }
+
+  // Large variation
+  &.switch-lg {
+    font-size: $font-size-lg;
+
+    input {
+      + label {
+        min-width: calc(#{$switch-height-lg} * 2);
+        height: $switch-height-lg;
+        line-height: $switch-height-lg;
+        text-indent: calc(calc(#{$switch-height-lg} * 2) + 0.5rem);
+      }
+
+      + label::before {
+        width: calc(#{$switch-height-lg} * 2);
+      }
+
+      + label::after {
+        width: calc(#{$switch-height-lg} - calc(#{$switch-thumb-padding} * 2));
+        height: calc(#{$switch-height-lg} - calc(#{$switch-thumb-padding} * 2));
+      }
+
+      &:checked + label::after {
+        margin-left: $switch-height-lg;
+      }
+    }
+  }
+
+  + .switch {
+    margin-left: 1rem;
+  }
+}
+
+/* switch toggle end */
+
+
+// flex utils
+.flex-1{
+    flex: 1;
+}
+
+.bg-dashboard-green {
+  background-color: $dashboard-green;
+}
+.bg-dashboard-red {
+  background-color: $dashboard-red;
+}
+
+.text-dashboard-dark-grey {
+  color: $dashboard-dark-grey;
+}

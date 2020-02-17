@@ -1,0 +1,15 @@
+@import '../../../theme/variables';
+
+.DurationPlotCard{
+  .bar-lab{
+    height: 8px;
+    position: relative;
+    background-color: #fff;
+
+    .plot-green{
+      background-color: $dashboard-green;
+      position: absolute;
+      height: 100%;
+    }
+  }
+}

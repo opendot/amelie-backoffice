@@ -1,0 +1,8 @@
+.Notifiche .nav-item.active {
+  border-bottom: solid 2px var(--gray-900); }
+
+.Notifiche .nav-link {
+  cursor: pointer; }
+
+.Notifiche .read-button-container {
+  width: 200px; }

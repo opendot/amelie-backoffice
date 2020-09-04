@@ -14,7 +14,7 @@
     "eazy-auth": "^0.7.1",
     "leaflet": "^1.5.1",
     "lodash-move": "^1.1.1",
-    "markdown-to-jsx": "^6.7.2",
+    "markdown-to-jsx": "^6.11.4",
     "material-icons-react": "^1.0.2",
     "memoize-one": "^5.0.4",
     "node-sass": "^4.12.0",
